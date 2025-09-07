@@ -229,7 +229,6 @@ allTreesBtn.addEventListener("click", () => {
 
 
 
-
 loadTrees();
 loadCategory();
 cartContainer.innerHTML = "";

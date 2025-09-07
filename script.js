@@ -227,6 +227,11 @@ allTreesBtn.addEventListener("click", () => {
     setActiveButton("all-trees");
 });
 
+window.addEventListener("DOMContentLoaded", () => {
+    setActiveButton("all-trees");
+    loadTrees(); // optional if you want to load all trees initially
+});
+
 
 
 loadTrees();

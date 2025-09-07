@@ -6,51 +6,63 @@
     <title>Green Earth</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/0eecd22d19.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="bg-[#f0fdf4]">
     <header>
-        <nav class="flex px-32 py-5 justify-between items-center bg-[#15803d] text-white">
-            <div class="website-title text-xl font-bold">
-                <a href="index.html"><h2>Green Earth</h2></a>
-            </div>
-            <div class="nav-links flex gap-6">
-                <a href="">About</a>
-                <a href="">Gallery</a>
-                <a href="">Plant a tree</a>
-            </div>
-            <div class="nav-button">
-                <button class="bg-[#facc15] text-[#15803d] px-5 py-3 rounded-3xl">Plant a Tree</button>
-            </div>
-        </nav>
-        <div class="hero flex justify-between bg-[#cff0dc]">
-            <img src="./assets/hero-leaf1.png" alt="">
-            <div class="hero-content flex flex-col">
-                <h1 class="text-5xl font-bold text-center">Plant a Tree, Grow a Future</h1>
-                <p class="text-center">Join our mission to plant 1 million trees and make the Earth greener for future
-generations.</p>
-<button class="bg-[#facc15] text-[#15803d] px-5 py-3 rounded-3xl">Get Involved</button>
-            </div>
-            <img src="./assets/hero-leaf2.png" alt="">
+      <nav class="flex px-32 py-5 justify-between items-center bg-[#15803d] text-white">
+        <div class="website-title text-xl font-bold">
+          <a href="index.html"><h2>Green Earth</h2></a>
         </div>
+        <div class="nav-links flex gap-6">
+          <a href="">About</a>
+          <a href="">Gallery</a>
+          <a href="">Plant a tree</a>
+        </div>
+        <div class="nav-button">
+          <button class="bg-[#facc15] text-[#15803d] px-5 py-3 rounded-3xl">Plant a Tree</button>
+        </div>
+      </nav>
+      <div class="hero flex justify-between bg-[#cff0dc]">
+        <img src="./assets/hero-leaf1.png" alt="" />
+        <div class="hero-content flex flex-col">
+          <h1 class="text-5xl font-bold text-center">Plant a Tree, Grow a Future</h1>
+          <p class="text-center">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+          <button class="bg-[#facc15] text-[#15803d] px-5 py-3 rounded-3xl">Get Involved</button>
+        </div>
+        <img src="./assets/hero-leaf2.png" alt="" />
+      </div>
     </header>
-    <main>
-        <div class="choose-your-trees mx-[135px] my-[100px]">
-            <h2 class="text-[32px] font-semibold text-center">Choose Your Trees</h2>
-            <div class="containers grid grid-cols-12">
-                <div class="categories col-span-1">
-                    <h3 class="text-[20px] font-semibold">Categories</h3>
+    <main class="">
+      <div class="choose-your-trees mx-[135px] my-[100px]">
+        <h2 class="text-[32px] font-semibold text-center">Choose Your Trees</h2>
+        <div class="containers grid grid-cols-12">
+          <div id="categories" class="categories col-span-2">
+            <h3 class="text-[20px] font-semibold">Categories</h3>
+            <ul id="category-buttons" class="category-buttons flex flex-col">
+              <li><button id="all-trees" class="text-left">All Trees</button></li>
+            </ul>
+          </div>
+          <div class="cards col-span-8 grid grid-cols-3">
+            <div class="card"></div>
+          </div>
+          <div class="cart rounded col-span-2 bg-white p-4">
+            <h3 class="text-[20px] font-semibold">Your Cart</h3>
+            <div class="items flex flex-col gap-2">
+              <div class="item flex item-center justify-between my-2 p-2 rounded bg-[#f0fdf4]">
+                <div class="item-details">
+                  <h4>Mango Tree</h4>
+                  <p>৳<span>500</span> x <span>1</span></p>
                 </div>
-                <div class="cards col-span-10">
-                    <div class="card">
-                        
-                    </div>
-                </div>
-                <div class="cart col-span-1">
-                    <h3 class="text-[20px] font-semibold">Your Cart</h3>
-                </div>
+                <div class="delete-btn"><i class="fa-solid fa-xmark"></i></div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer></footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>

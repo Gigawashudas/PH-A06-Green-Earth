@@ -107,7 +107,7 @@ const showTrees = plants => {
                 <p class="text-[12px] sm:min-h-23">${plant.description}</p>
                 <div class="category-price flex justify-between items-center">
                   <p class="text-[14px] font-medium py-1 px-3 bg-[#dcfce7] rounded-2xl text-[#15803d]">${plant.category}</p>
-                  <p>৳<span>${plant.price}</span></p>
+                  <p><span>${plant.price}৳</span></p>
                 </div>
               </div>
               <button class="bg-[#15803d] text-white py-3 w-full cursor-pointer rounded-3xl">Add To Cart</button>`;

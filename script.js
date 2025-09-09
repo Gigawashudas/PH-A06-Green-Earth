@@ -7,7 +7,17 @@ const modalClose = document.getElementById("modal-close");
 const cartContainer = document.getElementById("items");
 const totalPriceEl = document.getElementById("total-price");
 const spinner = document.getElementById("spinner");
-const categoryButtons = document.getElementById("category-buttons");
+
+const cart = document.getElementById("cart");
+
+document.getElementById("cart-hidden-btn").addEventListener("click", () => {
+    cart.classList.toggle("max-sm:hidden")
+});
+
+document.getElementById("cart-close").addEventListener("click", () => {
+    cart.classList.toggle("max-sm:hidden")
+})
+
 
 const loadCategory = () => {
     const url = "https://openapi.programming-hero.com/api/categories"
@@ -120,7 +130,7 @@ modal.addEventListener("click", (e) => {
 
 const addToCart = (plant) => {
     // Check if item already exists
-    let existingItem = Array.from(cartContainer.children).find(item => 
+    let existingItem = Array.from(cartContainer.children).find(item =>
         item.querySelector("h4").textContent === plant.name
     );
 
@@ -200,7 +210,7 @@ const setActiveButton = (activeId) => {
     });
 
     // Apply active style to the clicked button by ID
-    const activeBtn = document.getElementById(activeId);
+    const activeBtn = typeof activeId === "string" ? document.getElementById(activeId) : activeId;
     if (activeBtn) {
         activeBtn.classList.add("bg-[#15803d]", "text-white");
         activeBtn.classList.remove("hover:bg-[#00ff5e]");
@@ -218,7 +228,7 @@ document.querySelectorAll(".category-btn").forEach(btn => {
         }
 
         // Set active style
-        setActiveButton(e.target);
+        setActiveButton(e.target.id);
     });
 });
 

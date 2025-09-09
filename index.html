@@ -33,8 +33,8 @@
         <img class="max-sm:hidden" src="./assets/hero-leaf2.png" alt="" />
       </div>
     </header>
-    <main class="">
-      <div id="choose-your-trees" class="choose-your-trees mx-[135px] max-sm:mx-2 py-[100px] max-sm:py-[50px]">
+    <main class="flex flex-col items-center justify-center">
+      <section id="choose-your-trees" class="choose-your-trees mx-[135px] max-sm:mx-2 py-[100px] max-sm:py-[50px]">
         <h2 class="text-[32px] font-semibold text-center mb-10">Choose Your Trees</h2>
         <div class="containers grid gap-6 grid-cols-12">
           <div id="categories" class="categories col-span-2 max-sm:hidden">
@@ -63,7 +63,38 @@
             <span id="total-price">৳0</span>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="campaign flex flex-col items w-full pb-[100px]">
+        <h2 class="text-[32px] font-semibold text-center pb-10">About the Campaign</h2>
+        <div class="campaign-content flex items-center justify-center gap-[30px]">
+          <img src="./assets/about.png" alt="" class="campaign-content-img" />
+          <div class="campaign-text flex flex-col gap-5 w-[530px]">
+            <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+            <ul class="list-disc ml-4">
+              <li>Restoration of natural habitats</li>
+              <li>Improvement of air quality</li>
+              <li>Support for local communities</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="our-impact flex items-center flex-col justify-center px-[135px] py-[100px] bg-[#cff0dc]">
+        <h2 class="impact-title text-[32px] font-semibold pb-[40px]">Our Impact</h2>
+        <div class="impact-cards w-[100vw] px-[135px] flex gap-[50px]">
+            <div class="impact-card bg-white w-1/3 rounded-xl flex flex-col items-center justify-center p-[40px]">
+                <h2 class="text-[32px] text-[#15803d] font-semibold">500+</h2>
+                <p class="text-[16px]">Trees Planted</p>
+            </div>
+            <div class="impact-card bg-white w-1/3 rounded-xl flex flex-col items-center justify-center p-[40px]">
+                <h2 class="text-[32px] text-[#15803d] font-semibold">500+</h2>
+                <p class="text-[16px]">Trees Planted</p>
+            </div>
+            <div class="impact-card bg-white w-1/3 rounded-xl flex flex-col items-center justify-center p-[40px]">
+                <h2 class="text-[32px] text-[#15803d] font-semibold">500+</h2>
+                <p class="text-[16px]">Trees Planted</p>
+            </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
 

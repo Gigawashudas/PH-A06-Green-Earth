@@ -95,7 +95,7 @@ const showTrees = plants => {
                   <p>৳<span>${plant.price}</span></p>
                 </div>
               </div>
-              <button class="bg-[#15803d] text-white py-3 w-full rounded-3xl">Add To Cart</button>`;
+              <button class="bg-[#15803d] text-white py-3 w-full cursor-pointer rounded-3xl">Add To Cart</button>`;
 
         const treeName = card.querySelector("h4");
         treeName.addEventListener("click", () => openModal(plant));

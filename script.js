@@ -79,7 +79,7 @@ const showTrees = plants => {
         card.innerHTML = `<img class="w-full h-48 object-cover rounded"" src=${plant.image} alt="" />
               <div class="plant-description flex flex-col gap-2">
                 <h4 class="text-[14px] font-semibold cursor-pointer">${plant.name}</h4>
-                <p class="text-[12px] min-h-23">${plant.description}</p>
+                <p class="text-[12px] sm:min-h-23">${plant.description}</p>
                 <div class="category-price flex justify-between items-center">
                   <p class="text-[14px] font-medium py-1 px-3 bg-[#dcfce7] rounded-2xl text-[#15803d]">${plant.category}</p>
                   <p>৳<span>${plant.price}</span></p>
